@@ -47,11 +47,14 @@ Created the model using train data set.
 Calculated the accuracy using validation data set.
 Sorted the metrics.    
 Found the best parameters includ the best accuracy and the best model.   
+![image](https://user-images.githubusercontent.com/75282285/194676146-74caa6e2-2fac-4d4b-93b2-4328b2ab399f.png)
 
 
 # Stage3: Test
 Used the sub_test data set and the best model to calculate the AUC. If testing accuracy is similare as the best accuracy, it is OK.
-As the result, the best accuracy is  0.6605, use the test data set to calcuate accuracyis 0.6630, the difference is 0.0025, so it has not overfitting issue. 
+As the result, the best accuracy is  0.8755, use the test data set to calcuate accuracyis 0.8571, the difference is 0.0006, so it has not overfitting issue. 
+![image](https://user-images.githubusercontent.com/75282285/194676169-0910d5b3-d5dc-4fd2-9dae-80122dad488e.png)
+
 
 # Stage4: Predict
 ~~~
