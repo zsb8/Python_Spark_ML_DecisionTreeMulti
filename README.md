@@ -14,10 +14,10 @@ Placed the tsv on hadoop. Built 3 data sets: (1) Train data, (2) Validation data
 
 ## Compare the parameters
 "impurity"
-Set the step=15 and bins=50, draw the graph for the numIterations. The accuracy is the highest when impurity is 'entropy'. But the AUCs are similar, only little difference.
+Set the step=25 and bins=50, draw the graph for the numIterations. The accuracy is the highest when impurity is 'entropy'. But the AUCs are similar, only little difference.
 ~~~
     impurity_list = ["gini", "entropy"]
-    max_depth_list = [15]
+    max_depth_list = [25]
     max_bins_list = [50]
 ~~~
 ![image](https://user-images.githubusercontent.com/75282285/194674555-9aabbbe1-edce-4206-b6d4-aa2b845d7981.png)
@@ -29,14 +29,14 @@ Set the impurity='entropy' and bins=50, draw the graph for the numIterations. Th
     max_depth_list = [3, 5, 10, 15, 20, 25]
     max_bins_list = [50]
 ~~~
-![image](https://user-images.githubusercontent.com/75282285/194674952-c3fd11d5-5020-4226-8266-08db15c5e789.png)
+![image](https://user-images.githubusercontent.com/75282285/194675429-5aa5ca31-26f9-4f14-825d-749caebf7bb8.png)
 
 
 "maxBins"
-Set the impurity='entropy' and depth=15, draw the graph for the numIterations. The accuracy is the highest when bins=50. 
+Set the impurity='entropy' and depth=25, draw the graph for the numIterations. The accuracy is the highest when bins=50. 
 ~~~
     impurity_list = ["entropy"]
-    max_depth_list = [15]
+    max_depth_list = [25]
     max_bins_list = [3, 5, 10, 50, 100, 200]
 ~~~
 
