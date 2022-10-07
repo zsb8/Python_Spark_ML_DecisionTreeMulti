@@ -39,6 +39,8 @@ Set the impurity='entropy' and depth=25, draw the graph for the numIterations. T
     max_depth_list = [25]
     max_bins_list = [3, 5, 10, 50, 100, 200]
 ~~~
+![image](https://user-images.githubusercontent.com/75282285/194675824-8ec50dc0-dee5-4760-ae58-fbb36fdc165e.png)
+
 
 # Stage2: Train and evaluate   
 Created the model using train data set.   
