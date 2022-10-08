@@ -64,7 +64,6 @@ def train_evaluation_model(train_data,
     accuracy = evaluate_model(model, validation_data)
     duration = time() - start_time
     return accuracy, impurity, max_depth, max_bins, duration, model
-
 ~~~
 ![image](https://user-images.githubusercontent.com/75282285/194676146-74caa6e2-2fac-4d4b-93b2-4328b2ab399f.png)
 
