@@ -46,7 +46,26 @@ Set the impurity='entropy' and depth=25, draw the graph for the numIterations. T
 Created the model using train data set.   
 Calculated the accuracy using validation data set.
 Sorted the metrics.    
-Found the best parameters includ the best accuracy and the best model.   
+Found the best parameters includ the best accuracy and the best model.  
+~~~
+def train_evaluation_model(train_data,
+                           validation_data,
+                           impurity,
+                           max_depth,
+                           max_bins):
+    start_time = time()
+    model = DecisionTree.trainClassifier(train_data,
+                                         numClasses=7,
+                                         categoricalFeaturesInfo={},
+                                         impurity=impurity,
+                                         maxDepth=max_depth,
+                                         maxBins=max_bins
+                                         )
+    accuracy = evaluate_model(model, validation_data)
+    duration = time() - start_time
+    return accuracy, impurity, max_depth, max_bins, duration, model
+
+~~~
 ![image](https://user-images.githubusercontent.com/75282285/194676146-74caa6e2-2fac-4d4b-93b2-4328b2ab399f.png)
 
 
