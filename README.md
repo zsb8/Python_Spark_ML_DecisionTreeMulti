@@ -15,7 +15,7 @@ Placed the tsv on hadoop. Built 3 data sets: (1) Train data, (2) Validation data
 ## Compare the parameters
 "impurity"
 Set the step=25 and bins=50, draw the graph for the numIterations. The accuracy is the highest when impurity is 'entropy'. But the AUCs are similar, only little difference.
-~~~
+~~~python
     impurity_list = ["gini", "entropy"]
     max_depth_list = [25]
     max_bins_list = [50]
@@ -24,7 +24,7 @@ Set the step=25 and bins=50, draw the graph for the numIterations. The accuracy 
 
 "maxDepth"
 Set the impurity='entropy' and bins=50, draw the graph for the numIterations. The accuracy is the highest when depth=25. 
-~~~
+~~~python
     impurity_list = ["entropy"]
     max_depth_list = [3, 5, 10, 15, 20, 25]
     max_bins_list = [50]
@@ -34,7 +34,7 @@ Set the impurity='entropy' and bins=50, draw the graph for the numIterations. Th
 
 "maxBins"
 Set the impurity='entropy' and depth=25, draw the graph for the numIterations. The accuracy is the highest when bins=50. 
-~~~
+~~~python
     impurity_list = ["entropy"]
     max_depth_list = [25]
     max_bins_list = [3, 5, 10, 50, 100, 200]
@@ -47,7 +47,7 @@ Created the model using train data set.
 Calculated the accuracy using validation data set.
 Sorted the metrics.    
 Found the best parameters includ the best accuracy and the best model.  
-~~~
+~~~python
 def train_evaluation_model(train_data,
                            validation_data,
                            impurity,
@@ -75,7 +75,7 @@ As the result, the best accuracy is  0.8755, use the test data set to calcuate a
 
 
 # Stage4: Predict
-~~~
+~~~python
 def predict_data(best_model):
     for lp in label_point_RDD.take(20):
         predict = best_model.predict(lp.features)
