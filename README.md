@@ -1,3 +1,4 @@
+This a sample code, not really business code. I won't expose the company's code.     
 Data is pubic. We want to use ML to judge the forest's cover types (7 types) by multi factors. 
 
 # Python_Spark_ML_DecisionTreeMulti    
