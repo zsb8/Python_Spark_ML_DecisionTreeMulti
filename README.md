@@ -1,5 +1,6 @@
-This a sample code, not really business code. I won't expose the company's code.     
-Data is pubic. We want to use ML to judge the forest's cover types (7 types) by multi factors. 
+This is a sample code and not intended for actual business use. The company's proprietary code will not be shared. <br>
+However, the dataset used in this code is publicly available. <br>
+The code employs machine learning techniques to classify the seven types of forest cover based on multiple factors.
 
 # Python_Spark_ML_DecisionTreeMulti    
 
